@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════════════════════════════════
-   SITIO WEB — DR. HERIBERTO E. CHAVIRA SANTOS · ORTODONCIA
+   SITIO WEB · DR. HERIBERTO E. CHAVIRA SANTOS · ORTODONCIA
    ════════════════════════════════════════════════════════════════════
    CONFIGURACIÓN RÁPIDA:
    • Los DATOS DE CONTACTO (WhatsApp, teléfono, dirección) se editan
