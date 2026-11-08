@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!--
+════════════════════════════════════════════════════════════════════
+  SITIO WEB — DR. HERIBERTO E. CHAVIRA SANTOS · ORTODONCIA (CHIHUAHUA)
+════════════════════════════════════════════════════════════════════
+  GUÍA RÁPIDA DE EDICIÓN (no necesitas saber programar):
+
+  • TEXTOS: busca la palabra  EDITABLE  en este archivo; cada bloque
+    importante está señalado. Edita solo el texto entre etiquetas.
+  • COLORES Y TIPOGRAFÍAS: se cambian en  styles.css  (bloque
+    "CONFIGURACIÓN" al inicio del archivo).
+  • DATOS DE CONTACTO (WhatsApp, teléfono, dirección, horarios):
+    busca  EDITABLE: DATOS DE CONTACTO  más abajo.
+  • FOTO DEL DOCTOR: guarda la foto como  assets/doctor.jpg  y se
+    mostrará automáticamente en el hero y en "Sobre el doctor".
+  • LOGOS INSTITUCIONALES: ya integrados en la sección "Sellos"
+    (assets/logo-unam.png, logo-uach.jpg, logo-ula.png, logo-coech.jpg).
+    Para cambiar uno, sustituye el archivo conservando el mismo nombre.
+  • Todo lo marcado con  [PENDIENTE]  = información por confirmar
+    o por agregar. Elimina el marcador cuando tengas el dato.
+════════════════════════════════════════════════════════════════════
+-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ▼▼▼ SEO LOCAL (EDITABLE si cambia el enfoque) ▼▼▼ -->
+  <title>Ortodoncista en Chihuahua | Dr. Heriberto E. Chavira Santos</title>
+  <meta name="description" content="Ortodoncista en Chihuahua, Chih. Dr. Heriberto E. Chavira Santos: especialista en Ortodoncia egresado de la UNAM, 38 años de trayectoria docente y fundador de la Facultad de Odontología de la UACH. Agenda tu valoración por WhatsApp.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1F3070">
+  <!-- URL canónica temporal (GitHub Pages). Cuando tengan el dominio
+       oficial, sustitúyela aquí y en og:url por la nueva. -->
+  <link rel="canonical" href="https://eduaroys-star.github.io/dr-chavira-ortodoncia/">
+  <meta property="og:url" content="https://eduaroys-star.github.io/dr-chavira-ortodoncia/">
+
+  <!-- Open Graph (para compartir en Facebook/WhatsApp) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:title" content="Ortodoncista en Chihuahua | Dr. Heriberto E. Chavira Santos">
+  <meta property="og:description" content="Especialista en Ortodoncia egresado de la UNAM, con 38 años de trayectoria docente. Agenda tu cita de valoración en Chihuahua, Chih.">
+  <meta property="og:image" content="assets/doctor.jpg"> <!-- [PENDIENTE] al publicar, usa la URL absoluta de la imagen -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon (diente turquesa sobre azul, no requiere archivo) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%231F3070'/%3E%3Cpath d='M12 4c-2.8 0-4.5 1.8-4.5 4.2 0 1.4.6 2.5 1 3.5.4.8.6 1.4.6 2.5 0 1.4.6 2.4 1.4 2.4 1 0 1-1.3 1.2-2.3.1-.6.3-1.3.8-1.3s.7.7.8 1.3c.1 1 .2 2.3 1.2 2.3.8 0 1.4-1 1.4-2.4 0-1.1.2-1.7.6-2.5.4-1 1-2.1 1-3.5C17.5 5.8 14.8 4 12 4z' fill='%232BB8D6'/%3E%3C/svg%3E">
+
+  <!-- Tipografías: Poppins (títulos) + Inter (cuerpo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- Datos estructurados JSON-LD (negocio local / dentista) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Consultorio de Ortodoncia — Dr. Heriberto E. Chavira Santos",
+    "description": "Ortodoncista en Chihuahua, Chihuahua. Especialista en Ortodoncia egresado de la UNAM, con 38 años de trayectoria docente y fundador de la Facultad de Odontología de la UACH.",
+    "telephone": "+526144161030",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Benjamín Franklin 2515, Las Palmas, Campestre-Lomas",
+      "addressLocality": "Chihuahua",
+      "addressRegion": "Chihuahua",
+      "postalCode": "31205",
+      "addressCountry": "MX"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "16:00",
+      "closes": "20:00"
+    }],
+    "hasMap": "https://maps.app.goo.gl/VYJQPBbSQ7im3ARV9",
+    "sameAs": ["https://www.facebook.com/share/1FPvDHF61m/"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- ════════════════════ HEADER / MENÚ FIJO ════════════════════ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#inicio" aria-label="Ir al inicio — Dr. Chavira, Ortodoncia">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2.5c-3.4 0-5.5 2.1-5.5 5.1 0 1.7.7 3 1.2 4.2.4 1 .7 1.8.7 3.1 0 1.7.8 3 1.8 3 1.2 0 1.2-1.6 1.4-2.8.1-.7.4-1.5.9-1.5s.8.8.9 1.5c.2 1.2.2 2.8 1.4 2.8 1 0 1.8-1.3 1.8-3 0-1.3.3-2.1.7-3.1.5-1.2 1.2-2.5 1.2-4.2 0-3-2.1-5.1-5.5-5.1z"/></svg>
+        </span>
+        <span class="logo__text">Dr. Chavira <small>Ortodoncia · Chihuahua</small></span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav-principal" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#inicio">Inicio</a></li>
+          <li><a class="nav__link" href="#doctor">El Doctor</a></li>
+          <li><a class="nav__link" href="#trayectoria">Trayectoria</a></li>
+          <li><a class="nav__link" href="#tratamientos">Tratamientos</a></li>
+          <li><a class="nav__link" href="#faq">Preguntas</a></li>
+          <li><a class="nav__link" href="#contacto">Contacto</a></li>
+        </ul>
+        <!-- EDITABLE: DATOS DE CONTACTO — enlace de WhatsApp (cámbialo aquí y en las demás secciones) -->
+        <a class="btn btn--wa btn--sm nav__cta" href="https://wa.me/526141606775?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20valoraci%C3%B3n%20con%20el%20Dr.%20Chavira" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          Agendar cita
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ════════════════════ 1. HERO ════════════════════ -->
+    <section class="hero" id="inicio">
+      <div class="hero__blob hero__blob--1" data-speed="0.06" aria-hidden="true"></div>
+      <div class="hero__blob hero__blob--2" data-speed="-0.05" aria-hidden="true"></div>
+      <div class="hero__dots" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="hero__badge reveal"><span class="hero__badge-dot" aria-hidden="true"></span> Ortodoncista certificado · Chihuahua, Chih.</p>
+
+          <!-- EDITABLE: titular principal -->
+          <h1 class="reveal" style="--d:.08s">Sonrisas con el respaldo de <span class="grad">38 años</span> de experiencia académica y clínica</h1>
+
+          <p class="hero__subtitle reveal" style="--d:.16s">
+            <strong>Dr. Heriberto E. Chavira Santos</strong> — Especialista en Ortodoncia egresado de la UNAM y fundador de la Facultad de Odontología de la UACH. Atención para niños, adolescentes y adultos.
+          </p>
+
+          <div class="hero__ctas reveal" style="--d:.24s">
+            <a class="btn btn--wa btn--lg" href="https://wa.me/526141606775?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20valoraci%C3%B3n%20con%20el%20Dr.%20Chavira" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+              Agenda tu cita por WhatsApp
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#trayectoria">Conocer su trayectoria</a>
+          </div>
+
+          <ul class="hero__trust reveal" style="--d:.32s" aria-label="Credenciales destacadas">
+            <li class="trust-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Egresado de la UNAM</li>
+            <li class="trust-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Miembro N.º 181 — Consejo Nacional de Ortodoncia</li>
+            <li class="trust-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="15" height="15" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Premio Nacional de Odontología · Año 2000</li>
+          </ul>
+        </div>
+
+        <div class="hero__media reveal" style="--d:.2s">
+          <!-- FOTO DEL DOCTOR: guarda el archivo como assets/doctor.jpg y aparecerá aquí automáticamente -->
+          <figure class="photo-frame">
+            <img class="js-photo" src="assets/doctor.jpg" alt="Fotografía del Dr. Heriberto E. Chavira Santos, ortodoncista en Chihuahua" width="520" height="650" fetchpriority="high">
+            <div class="photo-placeholder" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="44" height="44"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              <span class="pendiente">PENDIENTE</span>
+              <p>Coloca la foto del doctor en<br><code>assets/doctor.jpg</code></p>
+            </div>
+            <figcaption class="float-card">
+              <span class="float-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </span>
+              <span><strong class="float-card__num">38 años</strong><small>de trayectoria docente en ortodoncia</small></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ 2. SOBRE EL DOCTOR ════════════════════ -->
+    <section class="section" id="doctor">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <!-- Usa la misma foto assets/doctor.jpg; si prefieres otra, cambia el src -->
+          <div class="about-photo">
+            <img class="js-photo" src="assets/doctor.jpg" alt="Retrato del Dr. Heriberto E. Chavira Santos en su consultorio" width="440" height="550" loading="lazy">
+            <div class="photo-placeholder photo-placeholder--rect" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="40" height="40"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              <span class="pendiente">PENDIENTE</span>
+              <p>Foto del doctor<br><code>assets/doctor.jpg</code></p>
+            </div>
+            <div class="exp-badge" aria-hidden="true"><strong>UNAM</strong><small>Licenciatura y Especialidad</small></div>
+          </div>
+        </div>
+
+        <div class="about__text">
+          <p class="section-eyebrow reveal">Sobre el doctor</p>
+          <h2 class="reveal" style="--d:.08s">Un especialista que también forma especialistas</h2>
+
+          <!-- EDITABLE: biografía (redacción basada en el texto oficial del doctor) -->
+          <p class="reveal" style="--d:.14s">
+            El <strong>Dr. Heriberto E. Chavira Santos</strong> es cirujano dentista egresado de la Facultad de Odontología de la <strong>Universidad Nacional Autónoma de México (UNAM)</strong>, institución en la que también cursó la <strong>Especialidad en Ortodoncia</strong> dentro de su División de Estudios de Posgrado.
+          </p>
+          <p class="reveal" style="--d:.2s">
+            Con <strong>38 años de docencia</strong> en la UNAM, la Universidad Latinoamericana y la Facultad de Odontología de la UACH —de la cual es <strong>fundador</strong>—, ha dedicado su carrera tanto a la atención clínica de sus pacientes como a la formación de nuevos dentistas y especialistas.
+          </p>
+          <p class="reveal" style="--d:.26s">
+            Se mantiene en <strong>formación constante</strong> para llevar ese aprendizaje al aula y al consultorio. Se reconoce como un facilitador de herramientas para el aprendizaje, con un perfil inquieto, sin miedo al cambio y capaz de gestionar la incertidumbre.
+          </p>
+
+          <ul class="check-list reveal" style="--d:.32s">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="17" height="17" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Cirujano Dentista — Facultad de Odontología, UNAM</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="17" height="17" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Especialidad en Ortodoncia — Posgrado UNAM</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="17" height="17" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Certificado por el Consejo de Ortodoncia del Estado de Chihuahua, A.C.</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="17" height="17" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Experiencia en ortodoncia pre-quirúrgica</li>
+          </ul>
+
+          <a class="btn btn--primary reveal" style="--d:.38s" href="#trayectoria">Ver trayectoria completa</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ 3. TRAYECTORIA Y RECONOCIMIENTOS ════════════════════ -->
+    <section class="section section--alt" id="trayectoria">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow reveal">Trayectoria y reconocimientos</p>
+          <h2 class="reveal" style="--d:.08s">La trayectoria que lo distingue</h2>
+          <p class="section-desc reveal" style="--d:.14s">Una carrera construida en las aulas y clínicas de las instituciones más importantes del país, al servicio de sus pacientes y de la enseñanza de la ortodoncia.</p>
+        </div>
+
+        <!-- Tarjetas de reconocimientos -->
+        <div class="honors">
+          <article class="honor-card reveal">
+            <span class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><circle cx="12" cy="8" r="6"/><polyline points="15.21 13.89 17 23 12 20 7 23 8.79 13.89"/></svg></span>
+            <h3>Premio Nacional de Odontología</h3>
+            <p>Otorgado por el Colegio Nacional de Cirujanos Dentistas, por el Estado de Chihuahua, en el año <strong>2000</strong>.</p>
+          </article>
+
+          <article class="honor-card reveal" style="--d:.08s">
+            <span class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14z"/><path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.11"/></svg></span>
+            <h3>Miembro N.º 181</h3>
+            <p>Membresía como Especialista en Ortodoncia, otorgada por el <strong>Consejo Nacional de Ortodoncia</strong>.</p>
+          </article>
+
+          <article class="honor-card reveal" style="--d:.16s">
+            <span class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/><line x1="9" y1="11" x2="13" y2="11"/></svg></span>
+            <h3>Certificación estatal</h3>
+            <p>Ortodoncista certificado por el <strong>Consejo de Ortodoncia del Estado de Chihuahua, A.C.</strong></p>
+          </article>
+
+          <article class="honor-card reveal" style="--d:.24s">
+            <span class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <h3>Miembro fundador</h3>
+            <p>Del <strong>Colegio de Ortodoncistas del Estado de Chihuahua</strong> y del Consejo de Ortodoncia del Estado de Chihuahua, A.C.</p>
+          </article>
+        </div>
+
+        <!-- Línea del tiempo (EDITABLE: cada hito es un bloque timeline__item) -->
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <span class="timeline__marker" aria-hidden="true"></span>
+            <div class="timeline__content">
+              <span class="timeline__tag">Formación</span>
+              <h3>Cirujano Dentista</h3>
+              <p>Egresado de la Facultad de Odontología de la <strong>Universidad Nacional Autónoma de México (UNAM)</strong>.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <span class="timeline__marker" aria-hidden="true"></span>
+            <div class="timeline__content">
+              <span class="timeline__tag">Posgrado</span>
+              <h3>Especialidad en Ortodoncia</h3>
+              <p>División de Estudios de Posgrado de la Facultad de Odontología, <strong>UNAM</strong>.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <span class="timeline__marker" aria-hidden="true"></span>
+            <div class="timeline__content">
+              <span class="timeline__tag">Docencia · UNAM</span>
+              <h3>Académico de licenciatura y posgrado</h3>
+              <p>Académico titular de Ortodoncia en la clínica periférica Azcapotzalco (licenciatura) y académico en los posgrados de <strong>Odontopediatría y Ortodoncia</strong>. Asesor de tesis y jurado en exámenes profesionales de licenciatura y posgrado.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <span class="timeline__marker" aria-hidden="true"></span>
+            <div class="timeline__content">
+              <span class="timeline__tag">Universidad Latinoamericana</span>
+              <h3>Académico del posgrado de Ortodoncia</h3>
+              <p>Docente del posgrado de Ortodoncia de la <strong>Universidad Latinoamericana</strong>.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <span class="timeline__marker" aria-hidden="true"></span>
+            <div class="timeline__content">
+              <span class="timeline__tag">UACH</span>
+              <h3>Fundador de la Facultad de Odontología</h3>
+              <p>Fundador de la Facultad de Odontología de la <strong>Universidad Autónoma de Chihuahua</strong>; docente de Ortodoncia; primer Secretario Académico, de Extensión y Difusión, y de Planeación; ex Consejero Técnico y Universitario; asesor de tesis, jurado en exámenes profesionales y padrino de varias generaciones de egresados.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item timeline__item--destacado reveal">
+            <span class="timeline__marker" aria-hidden="true"></span>
+            <div class="timeline__content">
+              <span class="timeline__tag">Reconocimiento · 2000</span>
+              <h3>Premio Nacional de Odontología</h3>
+              <p>Otorgado por el <strong>Colegio Nacional de Cirujanos Dentistas</strong>, por el Estado de Chihuahua, en el año 2000.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <span class="timeline__marker" aria-hidden="true"></span>
+            <div class="timeline__content">
+              <span class="timeline__tag">Certificación y membresías</span>
+              <h3>Respaldo de los consejos de ortodoncia</h3>
+              <p>Certificado por el <strong>Consejo de Ortodoncia del Estado de Chihuahua, A.C.</strong>; miembro N.º 181 como Especialista en Ortodoncia del <strong>Consejo Nacional de Ortodoncia</strong>; miembro fundador del Colegio de Ortodoncistas del Estado de Chihuahua y del Consejo de Ortodoncia del Estado de Chihuahua, A.C.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sellos institucionales (logos oficiales ya integrados desde assets/;
+             para cambiar uno, sustituye el archivo conservando el mismo nombre) -->
+        <div class="seals" aria-label="Instituciones de afiliación">
+          <a class="seal reveal" href="https://www.unam.mx/" target="_blank" rel="noopener" aria-label="Visitar el sitio de la UNAM (se abre en una pestaña nueva)">
+            <div class="seal__badge"><img src="assets/logo-unam.png" alt="Escudo de la Universidad Nacional Autónoma de México (UNAM)" width="112" height="112" loading="lazy"></div>
+            <p class="seal__name">Universidad Nacional Autónoma de México</p>
+          </a>
+          <a class="seal reveal" style="--d:.08s" href="https://uach.mx/" target="_blank" rel="noopener" aria-label="Visitar el sitio de la UACH (se abre en una pestaña nueva)">
+            <div class="seal__badge"><img src="assets/logo-uach.jpg" alt="Escudo de la Universidad Autónoma de Chihuahua (UACH)" width="112" height="112" loading="lazy"></div>
+            <p class="seal__name">Universidad Autónoma de Chihuahua</p>
+          </a>
+          <a class="seal reveal" style="--d:.16s" href="https://enlinea.ula.edu.mx/" target="_blank" rel="noopener" aria-label="Visitar el sitio de la Universidad Latinoamericana (se abre en una pestaña nueva)">
+            <div class="seal__badge"><img src="assets/logo-ula.png" alt="Logotipo de la Universidad Latinoamericana (ULA)" width="112" height="112" loading="lazy"></div>
+            <p class="seal__name">Universidad Latinoamericana</p>
+          </a>
+          <a class="seal reveal" style="--d:.24s" href="https://www.facebook.com/colegiodeortodoncistas/?locale=es_LA" target="_blank" rel="noopener" aria-label="Visitar el Facebook del Colegio de Ortodoncistas del Estado de Chihuahua (se abre en una pestaña nueva)">
+            <div class="seal__badge"><img src="assets/logo-coech.jpg" alt="Logotipo del Colegio de Ortodoncistas del Estado de Chihuahua (C.O.E.CH.)" width="112" height="112" loading="lazy"></div>
+            <p class="seal__name">Colegio de Ortodoncistas del Estado de Chihuahua</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ 4. CONTADORES ANIMADOS ════════════════════ -->
+    <section class="stats" aria-label="Datos destacados de la trayectoria del doctor">
+      <div class="container stats__grid">
+        <div class="stat reveal">
+          <span class="stat__num" data-target="38">0</span>
+          <p class="stat__label">Años de trayectoria docente</p>
+        </div>
+        <div class="stat reveal" style="--d:.1s">
+          <span class="stat__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="40" height="40"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </span>
+          <p class="stat__word">Fundador</p>
+          <p class="stat__label">De la Facultad de Odontología de la UACH</p>
+        </div>
+        <div class="stat reveal" style="--d:.2s">
+          <span class="stat__kicker">Año</span>
+          <span class="stat__num" data-target="2000">0</span>
+          <p class="stat__label">Premio Nacional de Odontología</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ 5. TRATAMIENTOS ════════════════════ -->
+    <section class="section" id="tratamientos">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow reveal">Tratamientos</p>
+          <h2 class="reveal" style="--d:.08s">Ortodoncia para cada etapa de la vida</h2>
+          <p class="section-desc reveal" style="--d:.14s">Atención especializada para niños, adolescentes y adultos, con un plan de tratamiento definido tras la valoración inicial.</p>
+        </div>
+
+        <!-- Aviso de edición visible: la lista oficial de servicios no fue proporcionada -->
+        <div class="section-notice reveal" role="note">
+          <span class="pendiente">PENDIENTE</span>
+          <p>Lista de servicios por confirmar con el doctor. Las tarjetas marcadas son ejemplos habituales de ortodoncia: edítalas o elimínalas en <code>index.html</code> (busca “treatment-card”).</p>
+        </div>
+
+        <div class="treatments-grid">
+          <!-- Servicio confirmado (mencionado en el mensaje de contacto) -->
+          <article class="treatment-card reveal">
+            <span class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
+            <h3>Valoración inicial</h3>
+            <p>Primera consulta para conocer tu caso, resolver tus dudas y orientarte sobre las opciones de tratamiento.</p>
+          </article>
+
+          <!-- Servicio confirmado (competencia clave documentada) -->
+          <article class="treatment-card reveal" style="--d:.07s">
+            <span class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
+            <h3>Ortodoncia pre-quirúrgica</h3>
+            <p>Tratamiento ortodóncico de preparación para pacientes que requieren cirugía, con seguimiento especializado.</p>
+          </article>
+
+          <!-- ▼▼▼ Servicios [PENDIENTE] de confirmar ▼▼▼ -->
+          <article class="treatment-card treatment-card--pendiente reveal" style="--d:.14s">
+            <span class="pend-tag">PENDIENTE</span>
+            <span class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></span>
+            <h3>Brackets metálicos</h3>
+            <p>La opción clásica para corregir la posición de los dientes en niños, adolescentes y adultos.</p>
+          </article>
+
+          <article class="treatment-card treatment-card--pendiente reveal" style="--d:.21s">
+            <span class="pend-tag">PENDIENTE</span>
+            <span class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span>
+            <h3>Brackets estéticos</h3>
+            <p>Brackets del color del diente: una alternativa más discreta para tu tratamiento.</p>
+          </article>
+
+          <article class="treatment-card treatment-card--pendiente reveal" style="--d:.28s">
+            <span class="pend-tag">PENDIENTE</span>
+            <span class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></span>
+            <h3>Ortodoncia invisible</h3>
+            <p>Alineadores transparentes removibles para quienes buscan la máxima discreción.</p>
+          </article>
+
+          <article class="treatment-card treatment-card--pendiente reveal" style="--d:.35s">
+            <span class="pend-tag">PENDIENTE</span>
+            <span class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+            <h3>Ortodoncia infantil</h3>
+            <p>Atención temprana para guiar el desarrollo de la sonrisa de los más pequeños.</p>
+          </article>
+
+          <article class="treatment-card treatment-card--pendiente reveal" style="--d:.42s">
+            <span class="pend-tag">PENDIENTE</span>
+            <span class="icon-bubble" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+            <h3>Retenedores</h3>
+            <p>Aparatos de contención para ayudar a mantener los resultados al finalizar el tratamiento.</p>
+          </article>
+        </div>
+
+        <div class="section-cta reveal">
+          <a class="btn btn--wa btn--lg" href="https://wa.me/526141606775?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20valoraci%C3%B3n%20con%20el%20Dr.%20Chavira" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            Agenda tu valoración
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ 6. GALERÍA (PLACEHOLDER) ════════════════════ -->
+    <section class="section section--alt" id="galeria">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow reveal">Galería</p>
+          <h2 class="reveal" style="--d:.08s">Casos antes y después</h2>
+          <p class="section-desc reveal" style="--d:.14s">Las fotografías de casos clínicos se publican únicamente con autorización de los pacientes.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-ph reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="38" height="38" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            <span class="pendiente">PENDIENTE</span>
+            <p>Fotografía de caso real (antes y después) con autorización del paciente</p>
+          </div>
+          <div class="gallery-ph reveal" style="--d:.08s">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="38" height="38" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            <span class="pendiente">PENDIENTE</span>
+            <p>Fotografía de caso real (antes y después) con autorización del paciente</p>
+          </div>
+          <div class="gallery-ph reveal" style="--d:.16s">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="38" height="38" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            <span class="pendiente">PENDIENTE</span>
+            <p>Fotografía de caso real (antes y después) con autorización del paciente</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ 7. TESTIMONIOS (PLACEHOLDER) ════════════════════ -->
+    <section class="section" id="testimonios">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow reveal">Testimonios</p>
+          <h2 class="reveal" style="--d:.08s">Lo que dicen los pacientes</h2>
+        </div>
+
+        <div class="review-ph reveal">
+          <div class="review-ph__stars" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p><span class="pendiente">PENDIENTE</span> Aquí aparecerán <strong>reseñas reales de pacientes</strong>, tomadas de la página de Facebook del consultorio. (No fue posible acceder a Facebook automáticamente; copia las reseñas públicas en esta sección, en <code>index.html</code>.)</p>
+          <a class="btn btn--ghost" href="https://www.facebook.com/share/1FPvDHF61m/" target="_blank" rel="noopener">Visitar página de Facebook</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════ 8. PREGUNTAS FRECUENTES ════════════════════ -->
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow reveal">Preguntas frecuentes</p>
+          <h2 class="reveal" style="--d:.08s">Resolvemos tus dudas</h2>
+        </div>
+
+        <div class="accordion reveal" style="--d:.14s">
+          <div class="accordion__item">
+            <button class="accordion__btn" type="button" aria-expanded="false">
+              ¿Dónde está ubicado el consultorio?
+              <span class="accordion__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                En <strong>Benjamín Franklin 2515, colonia Las Palmas, Campestre-Lomas, 31205 Chihuahua, Chih.</strong> <a href="https://maps.app.goo.gl/VYJQPBbSQ7im3ARV9" target="_blank" rel="noopener">Ver en Google Maps</a>.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__btn" type="button" aria-expanded="false">
+              ¿Cuál es el horario de atención?
+              <span class="accordion__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                De <strong>lunes a viernes, de 4:00 p. m. a 8:00 p. m.</strong> Sábado y domingo el consultorio permanece cerrado.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__btn" type="button" aria-expanded="false">
+              ¿Cómo agendo una cita?
+              <span class="accordion__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                Puedes agendar tu valoración por <a href="https://wa.me/526141606775?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20valoraci%C3%B3n%20con%20el%20Dr.%20Chavira" target="_blank" rel="noopener">WhatsApp al 614 160 6775</a> o llamando al <a href="tel:+526144161030">614 416 1030</a>.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__btn" type="button" aria-expanded="false">
+              ¿El Dr. Chavira atiende a niños y adultos?
+              <span class="accordion__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg></span>
+            </button>
+            <div class="accordion__panel">
+              <div class="accordion__panel-inner">
+                Sí. El consultorio recibe pacientes de todas las edades: <strong>niños, adolescentes y adultos</strong>. En la valoración inicial el especialista te orientará sobre el momento y el tipo de tratamiento adecuados para cada caso.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="faq-note reveal"><span class="pendiente">PENDIENTE</span> Preguntas frecuentes clínicas (duración, cuidados, costos): el doctor puede agregarlas editando esta sección en <code>index.html</code>.</p>
+      </div>
+    </section>
+
+    <!-- ════════════════════ 9. CONTACTO ════════════════════ -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-eyebrow reveal">Contacto</p>
+          <h2 class="reveal" style="--d:.08s">Agenda tu cita de valoración</h2>
+          <p class="section-desc reveal" style="--d:.14s">Estamos a un mensaje de distancia. Escríbenos por WhatsApp o llámanos: con gusto te atenderemos.</p>
+        </div>
+
+        <!-- Horario destacado (EDITABLE: DATOS DE CONTACTO) -->
+        <div class="notice-horario reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <p><strong>Horario de atención:</strong> lunes a viernes · 4:00 p. m. a 8:00 p. m. &nbsp;|&nbsp; Sábado y domingo · cerrado</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact-card reveal">
+            <div class="contact-item">
+              <span class="contact-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></span>
+              <div>
+                <small>WhatsApp</small>
+                <a href="https://wa.me/526141606775?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20valoraci%C3%B3n%20con%20el%20Dr.%20Chavira" target="_blank" rel="noopener"><strong>614 160 6775</strong></a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              <div>
+                <small>Teléfono</small>
+                <a href="tel:+526144161030"><strong>614 416 1030</strong></a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <div>
+                <small>Dirección</small>
+                <a href="https://maps.app.goo.gl/VYJQPBbSQ7im3ARV9" target="_blank" rel="noopener"><strong>Benjamín Franklin 2515, Las Palmas, Campestre-Lomas, 31205 Chihuahua, Chih.</strong></a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <span class="contact-item__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></span>
+              <div>
+                <small>Facebook</small>
+                <a href="https://www.facebook.com/share/1FPvDHF61m/" target="_blank" rel="noopener"><strong>Síguenos en Facebook</strong></a>
+              </div>
+            </div>
+
+            <div class="schedule" aria-label="Horario del consultorio">
+              <div class="schedule__row"><span>Lunes a viernes</span><strong>4:00 p. m. – 8:00 p. m.</strong> <span class="badge-abierto">Abierto</span></div>
+              <div class="schedule__row"><span>Sábado y domingo</span><strong>—</strong> <span class="badge-cerrado">Cerrado</span></div>
+            </div>
+
+            <div class="contact-cta">
+              <a class="btn btn--wa btn--lg btn--block" href="https://wa.me/526141606775?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20valoraci%C3%B3n%20con%20el%20Dr.%20Chavira" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                Escribir por WhatsApp
+              </a>
+              <a class="btn btn--ghost btn--block" href="tel:+526144161030">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Llamar al consultorio
+              </a>
+            </div>
+          </div>
+
+          <!-- Mapa embebido (no requiere clave de API) -->
+          <div class="map-wrap reveal" style="--d:.1s">
+            <iframe
+              src="https://www.google.com/maps?q=Benjam%C3%ADn%20Franklin%202515%2C%20Las%20Palmas%2C%20Campestre-Lomas%2C%2031205%20Chihuahua%2C%20Chih.%2C%20M%C3%A9xico&output=embed"
+              width="600" height="450" style="border:0" allowfullscreen loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa: consultorio del Dr. Chavira, Benjamín Franklin 2515, Chihuahua"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ════════════════════ 10. FOOTER ════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="logo logo--footer" href="#inicio" aria-label="Ir al inicio — Dr. Chavira, Ortodoncia">
+            <span class="logo__mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2.5c-3.4 0-5.5 2.1-5.5 5.1 0 1.7.7 3 1.2 4.2.4 1 .7 1.8.7 3.1 0 1.7.8 3 1.8 3 1.2 0 1.2-1.6 1.4-2.8.1-.7.4-1.5.9-1.5s.8.8.9 1.5c.2 1.2.2 2.8 1.4 2.8 1 0 1.8-1.3 1.8-3 0-1.3.3-2.1.7-3.1.5-1.2 1.2-2.5 1.2-4.2 0-3-2.1-5.1-5.5-5.1z"/></svg>
+            </span>
+            <span class="logo__text">Dr. Chavira <small>Ortodoncia · Chihuahua</small></span>
+          </a>
+          <p class="footer__desc">Ortodoncia con respaldo académico en Chihuahua, Chih. Especialista egresado de la UNAM, con 38 años de trayectoria docente.</p>
+          <a class="footer__social" href="https://www.facebook.com/share/1FPvDHF61m/" target="_blank" rel="noopener" aria-label="Facebook del consultorio">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+
+        <nav aria-label="Enlaces del pie de página">
+          <h4>Explora</h4>
+          <ul class="footer__links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#doctor">Sobre el doctor</a></li>
+            <li><a href="#trayectoria">Trayectoria</a></li>
+            <li><a href="#tratamientos">Tratamientos</a></li>
+            <li><a href="#faq">Preguntas frecuentes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h4>Contacto</h4>
+          <ul class="footer__links">
+            <li><a href="https://wa.me/526141606775?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20valoraci%C3%B3n%20con%20el%20Dr.%20Chavira" target="_blank" rel="noopener">WhatsApp: 614 160 6775</a></li>
+            <li><a href="tel:+526144161030">Teléfono: 614 416 1030</a></li>
+            <li><a href="https://maps.app.goo.gl/VYJQPBbSQ7im3ARV9" target="_blank" rel="noopener">Benjamín Franklin 2515, Chihuahua, Chih.</a></li>
+            <li><span>Lun–Vie · 4:00–8:00 p. m.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span id="year">2026</span> Dr. Heriberto E. Chavira Santos · Ortodoncia. Todos los derechos reservados.</p>
+        <p>Sitio informativo; no sustituye la valoración clínica con un especialista.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp (siempre visible) -->
+  <a class="wa-float" href="https://wa.me/526141606775?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20de%20valoraci%C3%B3n%20con%20el%20Dr.%20Chavira" target="_blank" rel="noopener" aria-label="Agendar cita por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
