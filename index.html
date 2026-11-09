@@ -13,8 +13,9 @@
     "CONFIGURACIÓN" al inicio del archivo).
   • DATOS DE CONTACTO (WhatsApp, teléfono, dirección, horarios):
     busca  EDITABLE: DATOS DE CONTACTO  más abajo.
-  • FOTO DEL DOCTOR: guarda la foto como  assets/doctor.jpg  y se
-    mostrará automáticamente en el hero y en "Sobre el doctor".
+  • FOTOS DEL DOCTOR: el hero usa  assets/doctor-1.jpg  y la sección
+    "Sobre el doctor" usa  assets/doctor-2.jpg. Para cambiarlas,
+    sustituye el archivo conservando el mismo nombre.
   • LOGOS INSTITUCIONALES: ya integrados en la sección "Sellos"
     (assets/logo-unam.png, logo-uach.jpg, logo-ula.png, logo-coech.jpg).
     Para cambiar uno, sustituye el archivo conservando el mismo nombre.
@@ -40,7 +41,7 @@
   <meta property="og:locale" content="es_MX">
   <meta property="og:title" content="Ortodoncista en Chihuahua | Dr. Heriberto E. Chavira Santos">
   <meta property="og:description" content="Especialista en Ortodoncia egresado de la UNAM, con 38 años de trayectoria docente. Agenda tu cita de valoración en Chihuahua, Chih.">
-  <meta property="og:image" content="assets/doctor.jpg"> <!-- [PENDIENTE] al publicar, usa la URL absoluta de la imagen -->
+  <meta property="og:image" content="assets/doctor-1.jpg"> <!-- [PENDIENTE] al publicar, usa la URL absoluta de la imagen -->
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon (diente turquesa sobre azul, no requiere archivo) -->
@@ -152,13 +153,13 @@
         </div>
 
         <div class="hero__media reveal" style="--d:.2s">
-          <!-- FOTO DEL DOCTOR: guarda el archivo como assets/doctor.jpg y aparecerá aquí automáticamente -->
+          <!-- FOTO DEL HERO: assets/doctor-1.jpg (para cambiarla, sustituye el archivo conservando el nombre) -->
           <figure class="photo-frame">
-            <img class="js-photo" src="assets/doctor.jpg" alt="Fotografía del Dr. Heriberto E. Chavira Santos, ortodoncista en Chihuahua" width="520" height="650" fetchpriority="high">
+            <img class="js-photo" src="assets/doctor-1.jpg" alt="El Dr. Heriberto E. Chavira Santos junto a sus títulos de la UNAM" width="520" height="650" fetchpriority="high">
             <div class="photo-placeholder" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="44" height="44"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
               <span class="pendiente">PENDIENTE</span>
-              <p>Coloca la foto del doctor en<br><code>assets/doctor.jpg</code></p>
+              <p>Coloca la foto del hero en<br><code>assets/doctor-1.jpg</code></p>
             </div>
             <figcaption class="float-card">
               <span class="float-card__icon" aria-hidden="true">
@@ -175,13 +176,13 @@
     <section class="section" id="doctor">
       <div class="container about__grid">
         <div class="about__media reveal">
-          <!-- Usa la misma foto assets/doctor.jpg; si prefieres otra, cambia el src -->
+          <!-- FOTO "SOBRE EL DOCTOR": assets/doctor-2.jpg (para cambiarla, sustituye el archivo conservando el nombre) -->
           <div class="about-photo">
-            <img class="js-photo" src="assets/doctor.jpg" alt="Retrato del Dr. Heriberto E. Chavira Santos en su consultorio" width="440" height="550" loading="lazy">
+            <img class="js-photo" src="assets/doctor-2.jpg" alt="El Dr. Chavira en su consultorio, junto a sus reconocimientos" width="440" height="550" loading="lazy">
             <div class="photo-placeholder photo-placeholder--rect" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="40" height="40"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
               <span class="pendiente">PENDIENTE</span>
-              <p>Foto del doctor<br><code>assets/doctor.jpg</code></p>
+              <p>Foto "Sobre el doctor"<br><code>assets/doctor-2.jpg</code></p>
             </div>
             <div class="exp-badge" aria-hidden="true"><strong>UNAM</strong><small>Licenciatura y Especialidad</small></div>
           </div>
