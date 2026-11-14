@@ -849,7 +849,7 @@ section { scroll-margin-top: 84px; }
 
 /* ─────────────── RADIO (BOTÓN DISCRETO) ─────────────── */
 .radio-float {
-  position: fixed; left: 1rem; bottom: 1.2rem; z-index: 89;
+  position: fixed; left: 1rem; top: 5.8rem; z-index: 110;
 }
 .radio-float__btn {
   width: 30px; height: 30px; border-radius: 50%;
@@ -875,7 +875,7 @@ section { scroll-margin-top: 84px; }
   border-color: rgba(43, 184, 214, 0.45);
 }
 @media (max-width: 640px) {
-  .radio-float { left: 0.8rem; bottom: 1rem; }
+  .radio-float { left: 0.8rem; top: 5.2rem; }
 }
 
 /* ─────────────── MOVIMIENTO REDUCIDO (ACCESIBILIDAD) ─────────────── */
