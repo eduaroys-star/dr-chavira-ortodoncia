@@ -371,16 +371,6 @@ section { scroll-margin-top: 84px; }
   box-shadow: 0 24px 50px rgba(31, 48, 112, 0.16);
   position: relative; z-index: 1;
 }
-.exp-badge {
-  position: absolute; top: -20px; right: -10px; z-index: 2;
-  background: linear-gradient(135deg, var(--azul), var(--azul-medio));
-  color: var(--blanco);
-  border-radius: 16px; padding: 0.75rem 1.15rem;
-  text-align: center;
-  box-shadow: 0 14px 30px rgba(31, 48, 112, 0.30);
-}
-.exp-badge strong { display: block; font-family: var(--fuente-titulos); font-size: 1.25rem; line-height: 1; }
-.exp-badge small { font-size: 0.66rem; font-weight: 600; opacity: 0.85; }
 
 .about__text h2 { font-size: clamp(1.7rem, 3.5vw, 2.35rem); margin-bottom: 1.3rem; }
 .about__text p { margin-bottom: 1.05rem; line-height: 1.8; }
@@ -855,6 +845,37 @@ section { scroll-margin-top: 84px; }
   .hero__ctas .btn { width: 100%; }
 
   .wa-float { width: 54px; height: 54px; right: 1rem; bottom: 1rem; }
+}
+
+/* ─────────────── RADIO (BOTÓN DISCRETO) ─────────────── */
+.radio-float {
+  position: fixed; left: 1rem; bottom: 1.2rem; z-index: 89;
+}
+.radio-float__btn {
+  width: 30px; height: 30px; border-radius: 50%;
+  border: 1px solid rgba(31, 48, 112, 0.18);
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--azul);
+  display: grid; place-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(31, 48, 112, 0.12);
+  padding: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.radio-float__btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(31, 48, 112, 0.18);
+  background: var(--blanco);
+}
+.radio-icon--pause { display: none; }
+.radio-float__btn.is-playing .radio-icon--play { display: none; }
+.radio-float__btn.is-playing .radio-icon--pause { display: block; }
+.radio-float__btn.is-playing {
+  color: var(--turquesa-oscuro);
+  border-color: rgba(43, 184, 214, 0.45);
+}
+@media (max-width: 640px) {
+  .radio-float { left: 0.8rem; bottom: 1rem; }
 }
 
 /* ─────────────── MOVIMIENTO REDUCIDO (ACCESIBILIDAD) ─────────────── */

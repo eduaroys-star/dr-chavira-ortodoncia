@@ -207,4 +207,32 @@
   /* ─────────── 9. AÑO AUTOMÁTICO en el footer ─────────── */
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+  /* ─────────── 10. RADIO SWISS JAZZ (reproductor discreto) ─────────── */
+  var radioAudio = document.getElementById('radio-jazz');
+  var radioBtn = document.getElementById('radio-toggle');
+
+  if (radioAudio && radioBtn) {
+    radioBtn.addEventListener('click', function () {
+      if (radioAudio.paused) {
+        var playPromise = radioAudio.play();
+        if (playPromise && typeof playPromise.then === 'function') {
+          playPromise.then(function () {
+            radioBtn.classList.add('is-playing');
+            radioBtn.setAttribute('aria-pressed', 'true');
+            radioBtn.setAttribute('aria-label', 'Pausar Radio Swiss Jazz');
+          }).catch(function () {
+            radioBtn.classList.remove('is-playing');
+            radioBtn.setAttribute('aria-pressed', 'false');
+            radioBtn.setAttribute('aria-label', 'Reproducir Radio Swiss Jazz');
+          });
+        }
+      } else {
+        radioAudio.pause();
+        radioBtn.classList.remove('is-playing');
+        radioBtn.setAttribute('aria-pressed', 'false');
+        radioBtn.setAttribute('aria-label', 'Reproducir Radio Swiss Jazz');
+      }
+    });
+  }
 })();
